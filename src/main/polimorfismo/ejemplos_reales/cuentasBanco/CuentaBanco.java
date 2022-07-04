@@ -1,10 +1,10 @@
 package main.polimorfismo.ejemplos_reales.cuentasBanco;
 
-public class CuentaBanco {
+public abstract class CuentaBanco {
 	
-	protected int saldo = 1000; 
+	protected int saldo = 1000;
 	
-	public void add(int dinero) {		}
+	public abstract void add(int dinero);
 	
-	public boolean get(int dinero) {return false;}
+	public abstract boolean get(int dinero);
 }

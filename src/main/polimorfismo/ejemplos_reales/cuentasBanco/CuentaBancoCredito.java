@@ -4,7 +4,7 @@ public class CuentaBancoCredito extends CuentaBanco {
 	
 	private int limiteCredito = 10000;
 	
-	@Override
+	@Override 
 	public void add(int dinero) {
 		 this.saldo = this.saldo + dinero;
 	}
@@ -27,5 +27,7 @@ public class CuentaBancoCredito extends CuentaBanco {
 	public int comprobarLimite() {
 		return this.limiteCredito;
 	}
+
+	
 
 }

@@ -7,6 +7,9 @@ public class Main {
 		// Me da igual el tipo de cuenta de banco que sea
 		// siempre trabajo con las mismas funciones.
 		
+		// No Deja hacer instancias de tipos genericos;
+		// CuentaBanco cuentaGenerica = new CuentaBanco();
+		
 		CuentaBanco cuenta1 = new CuentaBancoDebito();
 		cuenta1.add(1000);
 		cuenta1.get(1000);
@@ -19,10 +22,7 @@ public class Main {
 		
 		
 		// ESTO ROMPE LA APP
-		((CuentaBancoDebito)cuenta1).comprobarSaldo();
-		
-		
-		
+		// ((CuentaBancoDebito)cuenta1).comprobarSaldo(); 
 
 	}
 
