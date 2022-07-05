@@ -7,7 +7,7 @@ public class SoyUnBoton {
 	public void setListener(ClickListener listener) {
 		
 		int amount = 1;
-		for (int i = 0; i < 10000; i++) {
+		for (int i = 1; i < 100000; i++) {
 			amount = amount * i + amount;
 		}
 		
