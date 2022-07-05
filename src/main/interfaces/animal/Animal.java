@@ -1,6 +1,6 @@
 package main.interfaces.animal;
 
-public class Animal {
+public abstract class Animal {
 	
 	private boolean estaVivo = true;
 	private int vida = 100;

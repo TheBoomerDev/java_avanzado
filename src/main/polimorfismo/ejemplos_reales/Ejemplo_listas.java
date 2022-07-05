@@ -8,7 +8,7 @@ import java.util.Stack;
 public class Ejemplo_listas {
 	// https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/02/List-in-Java.png
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		
 		// Array Generico
 		List<String> lista = new ArrayList<String>();
@@ -19,13 +19,17 @@ public class Ejemplo_listas {
 		lista = new LinkedList<String>();
 		lista.add(""); // Añadimos un Elemento
 		lista.remove(0); // Vamos a pensar quitar un elemento 
-		((LinkedList)lista).push("frase"); // Recoger
+		((LinkedList)lista).push("frase"); // Añadir
 		((LinkedList)lista).pop(); // Quitar
 		
 		// Tenemos un Pila
 		lista = new Stack<String>();
 		lista.add(""); // Añadimos un Elemento
-		lista.remove(0); // Vamos a pensar quitar un elemento 
+		lista.remove(0); // Vamos a pensar quitar un elemento  
+		((Stack) lista).pop(); // Quitar
+		((Stack) lista).peek(); // Recoger
+		((Stack) lista).push("frase"); // Añadir
+		
 
 	}
 

@@ -9,12 +9,12 @@ public class CuentaBancoDebito extends CuentaBanco{
 	
 	@Override
 	public boolean get(int dinero) {
-		if (this.saldo >= dinero) {
-			this.saldo = this.saldo - dinero;
-			return true;
-		}
+		if ((dinero <= 0) || (this.saldo <= 0) || (this.saldo < dinero) ) {
+			return false;
+		} 
 		
-		return false;
+		this.saldo = this.saldo - dinero;
+		return true;
 	}
 	
 	public int comprobarSaldo() {

@@ -28,6 +28,7 @@ public class Main {
 		pezVolador.volar();
 		pezVolador.come(100);
 		
+		// Un objecto que implemente la interface
 		PuedeVolar volar = pezVolador;
 		PuedeNadar nada = pezVolador;
 		

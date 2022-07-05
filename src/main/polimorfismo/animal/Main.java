@@ -44,6 +44,12 @@ public class Main {
 		
 		// Una cafrada, NO LO HAGAIS
 		pez = (Pez) (Animal) new Ave();
+		
+		Ave aveX = new Ave();
+		Animal aniX = (Animal) aveX;
+		Pez pezX = (Pez) aniX;
+		
+		((Animal) aveX).enPeligro(); 
 		((Ave)(Animal)pez).volar();
 		
 		

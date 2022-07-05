@@ -16,7 +16,7 @@ public class Main {
 		float flotante2 = (float) num;
 		
 		// OJO - Este código casca la aplicación.
-		Integer num1 = null;
+		Integer num1 = null; 
 		int num2 = num1.intValue();
 		
 		Boolean dato1 = null;		
