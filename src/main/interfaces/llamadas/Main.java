@@ -55,18 +55,19 @@ public class Main {
 			public boolean click(String cadena) {
 				
 				boton2.setTexto("TEXTO:"+cadena);
-				sleep(1000);
+				//sleep(1000);
 				System.out.println("Estoy Fuera: "+cadena);
 				ostias();
 				
-				sleep(3000);
+				//sleep(3000);
 				
 				boton2.doClick();
 				
 				fin.seTermino();
 				
 				// ESTE ES EL FALLO DEL 75% QUE USAN LISTENER
-				boton.setListener(this);
+				// Este this NO es Main, es el ClickListener que estoy declarando
+				//boton.setListener(this);
 				
 				return false;
 			}
