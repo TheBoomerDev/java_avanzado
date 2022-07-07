@@ -60,7 +60,7 @@ public class CuentaCredito extends CuentaBanco{
 			} 
 			
 			if (this.limite <= 0) {
-				if (listener != null) listener.limiteSobrepasado();
+				if (listener != null) listener.limiteSobrepasado(this);
 			}
 			
 			return true;

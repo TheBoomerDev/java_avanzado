@@ -1,13 +1,20 @@
 package ejercicios.ej01.tiposCuenta;
 
 import ejercicios.ej01.interfaces.CuentaBanco;
+import ejercicios.ej01.interfaces.LlegadaLimite;
 
 public class CuentaDebito extends CuentaBanco{
  
 	private int saldo = 0;
+	private LlegadaLimite listener;
 	
-	public CuentaDebito(int numeroCuenta) {
+	public CuentaDebito(int numeroCuenta, LlegadaLimite listener) throws Exception {
+		if (listener == null) {
+			throw new Exception("Necesitamos el Limite");
+		}
+		this.listener = listener;
 		this.numeroCuenta = numeroCuenta;
+		
 	} 
  
 	public void meter( int cantidad) {
