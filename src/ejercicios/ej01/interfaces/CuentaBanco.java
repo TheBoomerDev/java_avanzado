@@ -2,7 +2,7 @@ package ejercicios.ej01.interfaces;
 
 public abstract class CuentaBanco {
 	
-	protected int numeroCuenta;
+	protected String numeroCuenta;
 	
 	public abstract void meter(int cantidad);
 	public abstract boolean sacar(int cantidad);
@@ -10,7 +10,7 @@ public abstract class CuentaBanco {
 	
 	@Override
 	public String toString() {
-		String formato = "%d -> Saldo: %d";
+		String formato = "%s -> Saldo: %d";
 		return String.format(formato, this.numeroCuenta, this.mostrarSaldo());
 	} 
 }
