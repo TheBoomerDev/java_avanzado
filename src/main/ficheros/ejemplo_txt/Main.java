@@ -14,6 +14,11 @@ public class Main {
 		try {
 		      File myObj = new File("filename.txt");
 		      
+		      
+		      // Borrar Ficheros
+		      myObj.delete(); // Se ejecuta en el momento
+		      myObj.deleteOnExit(); // Cuando termina el programa -> Ficheros Temporales
+		      
 		      if (myObj.createNewFile()) {
 		          System.out.println("File created: " + myObj.getName());
 		        } else {
